@@ -25,9 +25,30 @@ my $html = <<"HTML";
 <head>
     <meta charset="UTF-8">
     <title>Perl Generated Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
 $html_body
+<div class="footer">Powered by Perl 🚀</div>
 </body>
 </html>
 HTML
