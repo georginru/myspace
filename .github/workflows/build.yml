@@ -22,8 +22,11 @@ jobs:
         with:
           perl-version: '5.36'  # choose your version
 
+      - name: Install Markdown module
+        run: cpanm --notest Text::Markdown
+
       - name: Run Perl script to generate HTML
-        run: perl build.pl
+        run: perl build_md.pl
 
       - name: Upload generated site
         uses: actions/upload-pages-artifact@v3
